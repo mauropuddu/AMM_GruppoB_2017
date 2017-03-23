@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="it">
+    <head>
+        <title>Pagina Riservata - Profilo</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Mauro P">
+            <meta name="keywords" content="social, amici, post, bacheca, nerdbook, profilo">
+    </head>
+    
+    <body>
+        <!-- Predispongo la nav per il collegamento con la pagina Login e Descrizione -->
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="descrizione.html">Descrizione</a>
+        </nav>
+        
+        <h2>Inserisci i dati del Profilo</h2>
+        
+        <form method="get">
+            <!-- Campo per inserire Nome Utente -->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" value="Inserisci i tuo nome" />
+            
+            <label for="nome">Cognome</label>
+            <input type="text" name="cognome" id="cognome" value="Inserisci il tuo Cognome" />
+            
+            <!-- Campo per inserire Url immagine -->
+            <label for="url">Url Immagine Profilo</label>
+            <input type="url" name="url" id="url" />
+            
+            <!-- Campo per inserire una frase di presentazione -->
+            <label for="presentazione">Presentazione</label>
+            <textarea rows="2" cols="40" name="presentazione" id="presentazione">Inserisci una tua presentazione</textarea>
+            
+            <!-- Campo per inserire data di nascita, ho utilizzato un type "text" perchè il type "date" non è supportato da tutti i browser ed ottenevo un warning in convalida-->
+            <label for="data">Data di Nascita</label>
+            <input type="text" name="data" id="data"/>
+            
+            <label for="password">Password</label>
+            <input type="Password" name="password" id="password" value="nascosta"/> 
+            
+            <label for="conferma">Conferma Password</label>
+            <input type="Password" name="conferma" id="conferma" value="nascosta"/> 
+            
+            <!-- Pulsanti per inviare o cancellare i dati -->
+            <input type="submit" value="Invia">
+            <input type="reset" value="Cancella">
+        </form>
+        
+    </body>
+</html>
