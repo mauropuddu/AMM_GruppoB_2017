@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="it">
+    <head>
+        <title>Login</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Mauro P">
+            <meta name="keywords" content="social, amici, post, bacheca, nerdbook, login">
+            <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+    
+    <body>
+        <!-- Predispongo la navbar per il collegamento con le altre pagine -->
+        <div id="header">
+            <nav>
+                <a href="descrizione.html">Descrizione</a>
+                <a href="profilo.html">Profilo</a>
+                <a href="bacheca.html">Bacheca</a>
+            </nav>
+        </div>
+             
+        
+        <form method="GET" id="form_login">
+           
+            <div>
+                <h2>NerdBook</h2>
+                <img src="img/nerdbook.png" width="100px" height="70px" alt="Nerdbook">
+            </div>
+            
+            <div class="riquadro">
+                <!-- Richiesta Username e Password -->
+                <label for="Username"><b>Username<b></label>    
+                <input type="text" placeholder="Inserire Username" id="Username" class="campologin" required>
+
+                <label for="password"><b>Password Utente<b></label>
+                <input type="password" placeholder="Inserire Passsword" id="password" class="campologin" required/>
+
+                <button type="reset">Cancella</button>
+                <button type="submit">Login</button>
+                
+            </div>
+            
+    
+        </form>
+        
+    </body>
+</html>
