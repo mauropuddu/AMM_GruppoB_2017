@@ -1,0 +1,332 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30-mar-2016, 18.47.57
+    Author     : studente
+*/
+
+
+/********** proprietà comuni a tutti i formati *************/
+
+body
+{
+    background-image: url("img/sfondo.jpg");
+    opacity: 1;
+    font-family: Times, Arial, sans-serif;
+    color: black;
+    font-size: 18px;
+}
+
+h1
+{
+    font-weight: bold;
+    color: #bd0010;
+    text-align: center;
+}
+
+h2
+{
+    color: #3b45b5;
+    text-align: center;
+}
+
+h3
+{
+    color: #10750f;
+    text-align: center;
+}
+
+.divsx
+{
+    padding-top: 3%;
+    padding-left: 15px;
+    border-style: solid; 
+    float: left;
+    border-width: 2px;
+    width: 20%;
+    background-color: lightgray;
+    margin-top: -2px;
+    height: 700px;
+    display: block;
+}
+
+#contenitore_post
+{
+    width: 60%;
+    margin-left:30%;
+}
+
+#id_profilo
+{
+    margin-left: 20%; 
+    padding-top: 100px;
+}
+
+#form_profilo
+{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#id_descrizione
+{
+    margin-left: 25%;
+    margin-right: 10%; 
+}
+
+.post
+{
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    margin-bottom: 1px;
+    padding: 15px;
+}
+
+.foto_profilo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+form {
+    border-color: grey;
+    text-align: center;
+}
+
+.campologin {
+    width: 60%;
+    padding: 15px;
+    margin: 8px;
+    display: block;
+    background-color: #eaeaea;
+    margin-left: 17%;
+    margin-right: 15%;
+}
+
+.campoprofilo {
+    width: 60%;
+    padding: 10px;
+    margin: 8px;
+    display: block;
+    background-color: #eaeaea;
+    margin-left: 17%;
+    margin-right: 15%;
+}
+
+#form_login
+{
+    margin-top: 110px;
+    border-width: 3px;
+    border-style: solid;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.campologin:focus
+{
+    background-color: beige;
+}
+
+button {
+    color: white;
+    padding: 13px;
+    background-color: green;
+    width: 183px;
+    margin-top: 20px;
+}
+
+button:hover {
+    font-weight: bolder;
+}
+
+.riquadro {
+
+    padding: 16px;
+}
+
+a:link
+{
+    color: blue;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#header
+{
+    border-style: solid;
+    background-color: lightgray;
+    border-width: 2px;
+    height: 70px;
+}
+
+nav
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a:hover
+{
+    border: 1px;
+    border-style: solid; 
+}
+
+nav a:link
+{
+
+    font-size: 23px;
+    margin-left: 15px;
+    border-width: 2px;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+ol a:hover
+{
+    padding-left: 5px;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+
+.divsx
+{
+    display: none;
+}
+
+#contenitore_post
+{
+    width: 80%;
+    margin-left:10%;
+}
+
+#id_descrizione
+{
+    margin-left: 13%;
+}
+
+#id_profilo
+{
+    margin-left: 0px; 
+}
+
+.campoprofilo {
+    width: 90%;
+    margin-left: 0px;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+}
+
+#form_login
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+}
+
+@media only screen and (max-width: 480px){
+
+.divsx
+{
+    display: none;
+}
+
+#contenitore_post
+{
+    width: 80%;
+    margin-left:10%;
+}
+
+img
+{
+    display: none;
+}
+
+nav a:link
+{
+    font-size: 18px;
+}
+
+#header
+{
+    height: 64px;
+}
+
+#id_descrizione
+{
+    margin-left: 13%;
+}
+
+#id_profilo
+{
+    margin-left: 0px; 
+}
+
+.campoprofilo {
+    width: 90%;
+    margin-left: 0px;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+}
+
+#form_login
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+}
+
+
+@media only screen and (max-width: 400px){
+
+.divsx
+{
+    display: none;
+}
+
+#contenitore_post
+{
+    width: 80%;
+    margin-left:10%;
+}
+
+img
+{
+    display: none;
+}
+
+nav a:link
+{
+    display: none;
+}
+
+}
+
+
+
+
+/***************************************************************************************************************
+                                               IMMAGINI DECORATIVE
+
+Le immagini decorative sono quelle che non portano informazione aggiuntiva sul funzionamento del sistema in uso.
+Se non indispensabili andrebbero quindi evitate per non distrarre l'utente con informazioni non necessarie.
+Un esempio di immagine decorativa potrebbe essere la mongolfiera o la sveglia nello spazio riservato ai gruppi della bozza su moodle.
+Un esempio di immagine non decorativa è il simbolo dell'allegato al fianco del campo, che permette di capire la sua tipologia.
+
+***************************************************************************************************************/
